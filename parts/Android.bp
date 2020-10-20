@@ -23,6 +23,7 @@ android_app {
         "androidx.preference_preference",
         "org.pixelexperience.settings.resources",
         "vendor.xiaomi.hardware.displayfeature-V1.0-java",
+        "//hardware/xiaomi:vendor.xiaomi.hw.touchfeature-V1.0-java",
     ],
 
     optimize: {

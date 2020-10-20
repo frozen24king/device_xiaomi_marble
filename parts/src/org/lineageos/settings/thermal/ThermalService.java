@@ -42,6 +42,7 @@ public class ThermalService extends Service {
         public void onReceive(Context context, Intent intent) {
             mPreviousApp = "";
             mThermalUtils.setDefaultThermalProfile();
+            mThermalUtils.resetTouchModes();
         }
     };
 
@@ -67,6 +68,12 @@ public class ThermalService extends Service {
     @Override
     public IBinder onBind(Intent intent) {
         return null;
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        mThermalUtils.updateTouchRotation();
     }
 
     private void registerReceiver() {
