@@ -35,6 +35,9 @@
 /(vendor|system/vendor)/bin/hw/vendor.xiaomi.sensor.citsensorservice@1.1-service u:object_r:vendor_hal_citsensorservice_xiaomi_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service u:object_r:vendor_hal_citsensorservice_xiaomi_default_exec:s0
 
+# Google battery
+/vendor/bin/hw/vendor\.google\.google_battery-service                     u:object_r:hal_googlebattery_exec:s0
+
 # Diag
 /data/vendor/modem(/.*)? u:object_r:vendor_modem_data_file:s0
 
