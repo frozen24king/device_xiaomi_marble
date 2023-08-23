@@ -423,6 +423,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     XiaomiParts
 
+# Gms
+PRODUCT_PACKAGES += \
+    RemovePackagesGms
+
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.3 \
