@@ -17,3 +17,5 @@ set_prop(vendor_init, vendor_displayfeature_prop)
 allow init debugfs_tracing_debug:dir mounton;
 allow vendor_init device:chr_file getattr;
 
+# Allow init to set read_ahead_kb on /data partition
+allow init vendor_sysfs_scsi_host:file w_file_perms;
