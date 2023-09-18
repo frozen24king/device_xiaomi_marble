@@ -431,8 +431,18 @@ PRODUCT_PACKAGES += \
 
 # Perf
 PRODUCT_PACKAGES += \
+    libtflite \
+    android.hardware.thermal@2.0 \
     vendor.qti.hardware.perf@2.3 \
     vendor.qti.hardware.perf@2.3.vendor
+
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/com.qualcomm.qti.Performance.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.Performance.xml \
+    $(LOCAL_PATH)/configs/permissions/com.qualcomm.qti.UxPerformance.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.UxPerformance.xml
 
 # Power
 PRODUCT_PACKAGES += \
