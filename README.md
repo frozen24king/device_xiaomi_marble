@@ -24,6 +24,10 @@ LTE_CA (frameworks_base)
 Media (frameworks_av)
 - https://review.lineageos.org/c/LineageOS/android_frameworks_av/+/342862
 
+CLO's Framework Boost (frameworks_base)
+- https://github.com/xDroidOSS-Pixel/frameworks_base/commit/9fdecff4985cfd6b50324a9bcdd762f6c4f7d1b2
+- https://github.com/PixelExtended/frameworks_base/commit/99aea3857a185d258862a838082f4843edce38cf
+
 
 ## Device specifications
 
