@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_marble.mk
+    $(LOCAL_DIR)/spark_marble.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_marble-eng \
-    lineage_marble-userdebug \
-    lineage_marble-user
+    spark_marble-eng \
+    spark_marble-userdebug \
+    spark_marble-user
