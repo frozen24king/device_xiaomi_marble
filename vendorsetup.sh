@@ -3,7 +3,7 @@ echo 'Starting to clone stuffs needed to build for marble'
 
 # Vendor
 echo 'Cloning vendor tree'
-rm -rf vendor/xiaomi/marble && git clone https://github.com/kenway214/vendor_xiaomi_marble.git -b lineage-20 vendor/xiaomi/marble
+rm -rf vendor/xiaomi/marble && git clone https://github.com/kenway214/vendor_xiaomi_marble.git -b pex-13 vendor/xiaomi/marble
 
 
 # Kernel
@@ -46,5 +46,8 @@ rm -rf frameworks/av && git clone --depth=1 https://github.com/kenway214/spark_f
 echo 'vendor_spark'
 rm -rf vendor/spark && git clone --depth=1 https://github.com/kenway214/platform_vendor_spark.git -b pyro-next vendor/spark
 
+# frameworks_base
+echo 'frameworks_base'
+rm -rf frameworks/base && git clone --depth=1 https://github.com/kenway214/spark_frameworks_base.git -b pyro-next frameworks/base
 
 echo 'delete vendorsetup.sh from device tree once this is done'
