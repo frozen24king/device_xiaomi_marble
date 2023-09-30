@@ -685,4 +685,7 @@
 
      <!-- The default volume for the ring stream -->
      <integer name="config_audio_ring_vol_default">11</integer>
+
+    <!-- Whether to enable Lineage Health Service -->
+    <bool name="config_lineageHealthSupported">true</bool>
 </resources>
